@@ -14,7 +14,9 @@ layout: base.liquid
                 <div class="img-container">
                     <img src="../img/instagram.png" alt="instagram" width="80" height="80" />
                 </div>
-                <img src="../img/pinterest.png" alt="pinterest" width="80" height="80" />
+                <div class="img-container pinterest">
+                    <img src="../img/pinterest.png" alt="pinterest" width="80" height="80" />
+                </div>
             </div>
             <h1>You can also leave us a message</h1>
             <form>

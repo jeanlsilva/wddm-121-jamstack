@@ -22,6 +22,19 @@ header {
     align-items: center;
 }
 
+.header-container a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header-container .logo, header ul li a {
+    transition: color .5s;
+}
+
+.header-container .logo:hover {
+    color: pink;
+}
+
 header ul {
     display: flex;
     list-style: none;
@@ -186,7 +199,7 @@ footer .container {
     z-index: 1;
 }
 
-footer .home-container a {
+footer .home-footer a {
     text-decoration: none;
     color: pink;
 }
@@ -215,15 +228,21 @@ footer .overlay {
     background-color: white;
     height: 80px;
     border-radius: 20px;
+    pointer-events: none;
+    transition: transform .5s;
 }
 
 .contact .social img {
     object-fit: contain;
-    border-radius: 20px;
-    transition: transform .5s;
+    border-radius: 20px;    
+    pointer-events: auto;
 }
 
-.contact .social img:hover {
+.contact .social .pinterest {
+    background-color: transparent;
+}
+
+.contact .social .img-container:hover {
     transform: scale(1.3)
 }
 
@@ -262,6 +281,7 @@ footer .overlay {
     border-radius: 8px;
     font-size: 20px;
     cursor: pointer;
+    transition: color .5s;
 }
 
 .contact form button:hover {
