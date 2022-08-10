@@ -8,10 +8,23 @@ layout: base.liquid
         <div>
             <h1>If you want to contact us, reach out on our social media</h1>
             <div class="social">
-                <img src="../img/facebook.png" alt="facebook" width="150" height="150" />
-                <img src="../img/instagram.png" alt="instagram" width="150" height="150" />
-                <img src="../img/pinterest.png" alt="pinterest" width="150" height="150" />
+                <div class="img-container">
+                    <img src="../img/facebook.png" alt="facebook" width="80" height="80" />
+                </div>
+                <div class="img-container">
+                    <img src="../img/instagram.png" alt="instagram" width="80" height="80" />
+                </div>
+                <img src="../img/pinterest.png" alt="pinterest" width="80" height="80" />
             </div>
+            <h1>You can also leave us a message</h1>
+            <form>
+                <div>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                </div>
+                <div><textarea placeholder="Write your message"></textarea></div>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </div>
     <footer>

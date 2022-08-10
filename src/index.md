@@ -4,7 +4,7 @@ layout: base.liquid
 ---
 
 <div class="hero">
-    <h1>Fantastic handcraft amazing & delicious Ice creams</h1>
+    <h1>Fantastic handcraft amazing & delicious <span>Ice creams</span></h1>
 </div>
 <div class="description">
     <div class="overlay"></div>
@@ -34,7 +34,7 @@ layout: base.liquid
     </div>
     <footer>
         <div class="overlay"></div>
-        <div class="container">
+        <div class="container home-footer">
             <p>&copy 2022 GoldenScoops - All rights reserved.</p>
             <a href="#">Use Terms & Privacy Policy</a>
         </div>
