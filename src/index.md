@@ -32,10 +32,11 @@ layout: base.liquid
             <span>$15</span>
         </div>
     </div>
+    <footer>
+        <div class="overlay"></div>
+        <div class="container">
+            <p>&copy 2022 GoldenScoops - All rights reserved.</p>
+            <a href="#">Use Terms & Privacy Policy</a>
+        </div>
+    </footer>
 </div>
-<footer>
-    <div class="container">
-        <p>&copy 2022 GoldenScoops - All rights reserved.</p>
-        <a href="#">Use Terms & Privacy Policy</a>
-    </div>
-</footer>

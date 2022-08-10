@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Oleo Script Swash Caps", sans-serif;
 }
 
 header {
@@ -48,6 +49,37 @@ header ul li a:hover {
     align-items: center;
 }
 
+.about {
+    height: 100vh;
+    background-image: url("../img/about-mid.jpeg");
+    background-size: 100%;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 93vh;
+}
+
+.top .container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.top .container .text-container {
+    max-width: 60%;
+}
+
+.top .container .text-container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.top .container .text-container p {
+    font-size: 22px;
+}
+
 .hero h1 {
     font-size: 120px;
     color: pink;
@@ -67,7 +99,7 @@ header ul li a:hover {
 .overlay {
     position: absolute;
     z-index: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -135,8 +167,8 @@ header ul li a:hover {
 }
 
 footer {
-    background-color: pink;
     height: 40px;
+    width: 100%;
 }
 
 footer .container {
@@ -146,4 +178,28 @@ footer .container {
     height: 100%;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+footer .container a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer .container a:hover {
+    text-decoration:underline;
+}
+
+footer .overlay {
+    height: 40px;
+}
+
+.contact .social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact .social img {
+    object-fit: cover;
 }
