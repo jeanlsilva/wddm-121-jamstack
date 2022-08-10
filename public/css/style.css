@@ -1,3 +1,149 @@
-body {
-    background-color: pink
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+}
+
+.header-container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.header-container {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+header ul li a:hover {
+    color: pink;
+}
+
+.hero {
+    background-image: url("../img/hero.jpeg");
+    background-size: 100%;
+    background-position-y: -90px;
+    object-fit: contain;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 120px;
+    color: pink;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.description {
+    height: 100vh;
+    color: pink;
+    background-image: url("../img/desc.jpeg");
+    background-size: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.description .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.description .container h2 {
+    position: absolute;
+    font-size: 80px;
+    top: 60px;
+}
+
+.description .container h3 {
+    position: absolute;
+    width: 75%;
+    right: 0;
+    bottom: 60px;
+    font-size: 48px;
+    text-align: right;
+}
+
+.home-grid {
+    background-image: url("../img/grid.jpeg");
+    background-size: 100%;
+    object-fit: contain;
+    position: relative;
+    color: pink;
+}
+
+.home-grid .grid {
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+}
+
+.home-grid .grid .grid-item {
+    text-align: center;
+    opacity: .5;
+    transition: opacity 0.5s;
+}
+
+.home-grid .grid .grid-item:hover {
+    opacity: 1;
+}
+
+.home-grid .grid .grid-item p {
+    font-size: 22px;
+}
+
+.home-grid .grid .grid-item span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: pink;
+    height: 40px;
+}
+
+footer .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
