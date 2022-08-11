@@ -37,9 +37,17 @@ header {
 
 header ul {
     display: flex;
+    flex-direction: row;
     list-style: none;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.hamburger-menu {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
 }
 
 header ul li a {
@@ -282,6 +290,7 @@ footer .overlay {
     font-size: 20px;
     cursor: pointer;
     transition: color .5s;
+    border: 0;
 }
 
 .contact form button:hover {
@@ -291,4 +300,227 @@ footer .overlay {
 .about a, .contact a {
     text-decoration: none;
     color: black;
+}
+
+@media (max-width: 1024px) {
+    .header-container, .hero h1, .description .container, footer .home-footer, .about .top .container, .about footer .container, .contact footer .container {
+        max-width: 800px;
+    }
+
+    .hero h1 {
+        font-size: 90px;
+    }
+
+    .description .container h2 {
+        font-size: 52px;
+    }
+
+    .description .container h3 {
+        font-size: 36px;
+    }
+
+    .about .top .text-container h1 {
+        font-size: 36px;
+    }
+
+    .about .top .text-container p {
+        font-size: 18px;
+    }
+
+    .contact .top >div {
+        margin-top: 80px;
+    }
+
+    .contact .top {
+        height: auto;
+    }
+
+    .contact .social {
+        margin-bottom: 0;
+    }
+
+    .contact footer {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container, .hero h1, .description .container, footer .home-footer, .about .top .container, .about footer .container, .contact footer .container, .contact .top >div {
+        max-width: 500px;
+    }
+
+    .hero {
+        background-position-y: 0;
+        background-size: 120%;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .description, .home-grid {
+        background-size: 120%;
+    }
+
+    .description .container h2 {
+        font-size: 42px;
+        top: 30px;
+    }
+
+    .description .container h3 {
+        font-size: 28px;
+    }
+
+    .home-grid grid .item:active {
+        opacity: 1
+    }
+
+    .home-grid grid .item:not(:active) {
+        opacity: .5
+    }
+
+    .about .top .text-container h1 {
+        font-size: 24px;
+    }
+
+    .about .top .text-container p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .header-container {
+        max-width: 380px;
+    }
+
+    header ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        display: none;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 10px;
+    }
+
+    header ul li {
+        text-align: right;
+    }
+
+    .header-container li a {
+        color: pink;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    header .logo {
+        position: relative;
+        top: 10px;
+    }
+
+    .hero, .description, .about {
+        background-size: 205%;
+    }
+
+    .contact {
+        background-size: 300%;
+        background-position-x: -250px;
+    }
+
+    .about {
+        background-position-x: -300px;
+    }
+
+    .hero h1, .description .container, footer .home-footer, .about .top .container, .about footer .container, .contact .top >div, .contact footer .container {
+        max-width: 380px;
+    }
+
+    .description .container h2 {
+        font-size: 36px;
+    }
+
+    .description .container h3 {
+        font-size: 20px;
+    }
+
+    .home-grid {
+        background-size: auto;        
+    }
+
+    .home-grid .grid {
+        height: auto;
+        flex-direction: column;
+        padding: 60px 0;
+        gap: 25px;
+    }
+
+    footer, footer .overlay {
+        height: 60px;
+    }
+
+    footer .home-footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about .top {
+        height: 100vh;
+    }
+
+    .about .top .text-container {
+        max-width: 100%;
+    }
+
+    .about footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .about footer .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact .top >div h1 {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .contact footer .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact form >div {
+        flex-direction: column;
+    }
+
+    .contact form button {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contact .top textarea {
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header-container, .hero h1, .description .container, footer .home-footer, .about .top .container, .about footer .container  {
+        max-width: 300px;
+    }
+
+    .hero, .description {
+        background-size: 270%;
+    }
+}
+
+@media (min-width: 450px) {
+    header ul {
+        display: flex;
+    }
 }
